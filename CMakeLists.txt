@@ -166,6 +166,8 @@ endif()
 install(
   TARGETS OpenCL
   EXPORT OpenCLICDLoaderTargets
+  LIBRARY
+    DESTINATION ${CMAKE_INSTALL_LIBDIR} # obtained from GNUInstallDirs
 )
 
 export(
